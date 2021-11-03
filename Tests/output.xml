@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.7.3 on win32)" generated="20211023 10:45:13.602" rpa="false" schemaversion="2">
+<suite id="s1" name="Sample" source="C:\MyPythonDevelopment\RobotScripts\AmazonRobotFramework\Tests\sample.robot">
+<test id="s1-t1" name="user login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.in</arg>
+<arg>ie</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211023 10:45:14.429" level="INFO">Opening browser 'ie' to base url 'https://www.amazon.in'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211023 10:45:14.429" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20211023 10:45:14.429" endtime="20211023 10:45:14.429"/>
+</kw>
+<msg timestamp="20211023 10:45:14.476" level="FAIL">WebDriverException: Message: 'IEDriverServer.exe' executable needs to be in PATH. Please download from https://www.selenium.dev/downloads/ and read up at https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver
+</msg>
+<status status="FAIL" starttime="20211023 10:45:14.429" endtime="20211023 10:45:14.476"/>
+</kw>
+<doc>hi test</doc>
+<tag>smoke</tag>
+<status status="FAIL" starttime="20211023 10:45:14.429" endtime="20211023 10:45:14.476">WebDriverException: Message: 'IEDriverServer.exe' executable needs to be in PATH. Please download from https://www.selenium.dev/downloads/ and read up at https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver
+</status>
+</test>
+<doc>hello hi</doc>
+<status status="FAIL" starttime="20211023 10:45:13.617" endtime="20211023 10:45:14.476"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Sample">Sample</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
